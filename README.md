@@ -4,7 +4,7 @@ Converts a .vmdk to .vhdx for Hyper-V. Install "Microsoft Virtual Machine Conver
 to use the Powershell module. Run script as Powershell administrator.
 
 Usage
-=====
+-----
 ./ConvertVMDKtoVHDX [sourceFile] [destinationPath]
 
 Example
