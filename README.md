@@ -1,14 +1,25 @@
-PowerShell-Template
+ConvertVMDKtoVHDX
 ===================
 
-This is a template that I use when I create a PowerShell script. It includes code for linking external libraries, displaying the application name/version and copyright/license, help screens, and command line parameter handling.
+Converts a .vmdk to .vhdx for Hyper-V. Install "Microsoft Virtual Machine Converter 3.0" in order
+to use the Powershell module. Run script as Powershell administrator.
+
+Usage
+=====
+./ConvertVMDKtoVHDX [sourceFile] [destinationPath]
+
+Example
+=======
+./ConvertVMDKtoVHDX "D:\VM\bitnami-joomla-3.9.10-0-linux-debian-9-x86_64.vmdk" "D:\VM"
 
 Requirements
 ============
 PowerShell 5.x or higher. The template use a class and only PowerShell from this version onwards support this functionality.
 
-Usage
-=====
-The Main section (i.e. #=[ MAIN ]=== is where you add the main body of your code. The code begins by instantiating AppInfo with $app. This displays the program info (name, version, license) and help screen if its requested. The main body ends with $app.QuitProgram($true, $true) which displays the script execution time and Done message (both are optional).
+References
+==========
+How to Convert a VMWare VMDK to Hyper-V VHD
+https://blogs.msdn.microsoft.com/timomta/2015/06/11/how-to-convert-a-vmware-vmdk-to-hyper-v-vhd/
 
-You need to define the contents of the help screen in the HelpScreen function. This is called by DisplayHelp in the AppInfo class. The command line parameters to call help is ? or help.
+Microsoft Virtual Machine Converter 3.0
+https://www.microsoft.com/en-us/download/confirmation.aspx?id=42497
