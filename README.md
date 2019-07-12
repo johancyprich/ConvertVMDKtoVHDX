@@ -8,15 +8,15 @@ Usage
 ./ConvertVMDKtoVHDX [sourceFile] [destinationPath]
 
 Example
-=======
+-------
 ./ConvertVMDKtoVHDX "D:\VM\bitnami-joomla-3.9.10-0-linux-debian-9-x86_64.vmdk" "D:\VM"
 
 Requirements
-============
+------------
 PowerShell 5.x or higher. The template use a class and only PowerShell from this version onwards support this functionality.
 
 References
-==========
+----------
 How to Convert a VMWare VMDK to Hyper-V VHD<br />
 https://blogs.msdn.microsoft.com/timomta/2015/06/11/how-to-convert-a-vmware-vmdk-to-hyper-v-vhd/
 
